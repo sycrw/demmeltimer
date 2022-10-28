@@ -1,0 +1,13 @@
+body{
+background-color: black;
+}
+.navbar{
+    display: flex;
+    justify-content: left;
+}
+.name{
+color: green;
+font-size: 200%;
+font-family: "Outfit";
+padding: 0.5;
+}
