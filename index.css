@@ -1,13 +1,43 @@
+:root {
+    --main-color : green;
+}
+
 body{
 background-color: black;
 }
 .navbar{
     display: flex;
-    justify-content: left;
+    justify-content: right;
 }
 .name{
-color: green;
+color: var(--main-color);
 font-size: 200%;
 font-family: "Outfit";
 padding: 0.5;
+margin-right: auto;
+font-weight: 800;
+}
+.navbarelem{
+    color: var(--main-color);
+    font-size: 200%;
+    font-family: "Outfit";
+    padding-left: 1%;
+    text-decoration: none;
+    
+}
+.navbarelem::after{
+    display: inline-block;
+    content:"";
+    background-color: var(--main-color);
+    margin-left:0;
+    top: -38%;
+    width: 00%;
+    height: 5px;
+    position: relative;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.navbarelem:hover::after{
+    width: 100%;
+    
 }
