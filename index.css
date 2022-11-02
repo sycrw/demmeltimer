@@ -1,5 +1,5 @@
 :root {
-    --main-color : green;
+    --main-color : rgb(4, 133, 255);
 }
 
 body{
@@ -40,4 +40,55 @@ font-weight: 800;
 .navbarelem:hover::after{
     width: 100%;
     
+}
+/*login*/
+.l-content{
+
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+
+    
+    
+}
+.l-content a{
+    color:var(--main-color);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Outfit";
+    font-size: 1000%;
+    font-weight: 800;
+}
+.l-content input{
+    margin-left: auto ;
+    margin-right: auto;
+    width: 70%;
+    padding: 1%;
+    background-color: rgba(4, 134, 255, 0.233);
+    border: var(--main-color) solid 2px;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 20px;
+    color: gray;
+}
+.l-content input::placeholder{
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 20px;
+}
+.l-content button{
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 10%;
+    padding: 0.2%;
+    background-color:var(--main-color);
+    border: none;
+    border-radius: 100000px;
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 20px;
+    color: gray;
 }
