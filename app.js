@@ -1,6 +1,14 @@
+checkCookies();
+function checkCookies(){
+    var cookie = getCookie("pass");
+    console.log(cookie);
+    if(cookie!="test"){
+        window.location = "verification.html";
+    }
 
+}
 function setCookie(cname, cvalue, exdays) {
-    console.log("eun");
+    
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     let expires = "expires=" + d.toUTCString();
@@ -21,4 +29,12 @@ function getCookie(cname) {
         }
     }
     return "";
+}
+function login(){
+    pas = document.getElementById("pas").value;
+    console.log(pas);
+    if(pas== "test"){
+        window.location ="index.html";
+    }
+    setCookie("pass",pas);
 }
